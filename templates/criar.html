@@ -1,0 +1,22 @@
+{% extends "base-home.html" %}
+
+{% block title %}Nova Publicação{% endblock%}
+
+{% block content %}
+
+    <main>
+        <form action="/create" method="POST" enctype="multipart/form-data">
+            
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="content" placeholder="Digite algo..." rows="4" required></textarea>
+            
+            <label for="image">Imagem:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            
+            <button type="submit">Criar Publicação</button>
+        </form>
+    </main>
+
+    <a href="/home">Voltar para a Página Inicial</a>
+
+{% endblock%}

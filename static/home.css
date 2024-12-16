@@ -1,0 +1,513 @@
+/*
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+*/
+
+/*BASE-HOME*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #79c2cc;
+  color: #fff;
+  padding: 10px 20px;
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+.navbar {
+  background-color: #79c2cc;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+ }
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*HOME*/
+
+main {
+  padding: 1rem;
+  /* padding: 20px; */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.interactions{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.logo {
+  font-size: 24px;
+  /* color:#4a5eb7; */
+  color: #79c2cc;
+  margin-bottom: 10px;
+  font-family: "Racing Sans One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo img {
+  height: 75x;
+  width: 75px;
+  /* margin: 10px auto; */
+  display: block;
+}
+
+.form-container {
+  padding: 0px;
+  padding-right: 20px;
+}
+
+.title,
+.welcome-title,
+.login-title {
+  font-size: 24px;
+  color: #4a5eb7;
+  margin-bottom: 20px;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.form-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.password-criteria {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.password-criteria ul {
+  padding: 0;
+  list-style: none;
+}
+
+.password-criteria li {
+  margin: 5px 0;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #2ca1a6;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #228b90;
+}
+
+.welcome-container,
+.login-container,
+.opition-container {
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome-btn,
+.login-btn {
+  background-color: #2ca1a6;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.welcome-btn:hover,
+.login-btn:hover {
+  background-color: #228b90;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  flex-grow: 1;
+}
+
+.password-wrapper .toggle-password {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#create-post {
+  margin-bottom: 2rem;
+}
+
+#create-post form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#create-post textarea {
+  width: 100%;
+  min-height: 80px;
+}
+
+#posts .post {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  /* padding: 20px;
+  margin-bottom: 20px; */
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+  /* border-radius: 5px; */
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.flash {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.flash-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.flash-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+.search-bar {
+  position: relative;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+.mainbox {
+  box-sizing: border-box;
+  position: relative;
+  width: 230px;
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  border-radius: 160px;
+  background-color: rgba(240, 224, 255, 0.355);
+  transition: all 0.3s ease;
+}
+
+.checkbox:focus {
+  border: none;
+  outline: none;
+}
+
+.checkbox:checked {
+  right: 10px;
+}
+
+.checkbox:checked~.mainbox {
+  width: 50px;
+}
+
+.checkbox:checked~.mainbox .search_input {
+  width: 0;
+  height: 0px;
+}
+
+.checkbox:checked~.mainbox .iconContainer {
+  padding-right: 8px;
+}
+
+.checkbox {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 17px;
+  top: 10px;
+  z-index: 9;
+  cursor: pointer;
+  appearance: none;
+}
+
+.search_input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 170px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  font-size: 1em;
+  color: white;
+  transition: all 0.3s ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search_input::placeholder {
+  color: rgba(255, 255, 255, 0.776);
+}
+
+.iconContainer {
+  box-sizing: border-box;
+  padding-top: 5px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.search_icon {
+  box-sizing: border-box;
+  fill: white;
+  font-size: 1.3em;
+}
+
+
+
+
+main {
+  padding: 20px;
+}
+
+.post {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  margin: 10px 0;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  color: #00a2c7;
+  cursor: pointer;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #00a2c7;
+  padding: 10px 0;
+}
+
+#create-post-btn {
+  background-color: white;
+  color: #00a2c7;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.comment-icon-container {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.comment-icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.comment-form {
+  margin-top: 10px;
+}
+
+.like-icon-container {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.like-icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.like-form {
+  margin-top: 10px;
+}
+
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.comment-form input {
+  width: 75%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  color: white;
+  border: none;
+  cursor: pointer;
+}

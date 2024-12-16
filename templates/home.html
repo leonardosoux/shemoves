@@ -1,0 +1,47 @@
+{% extends "base-home.html" %}
+
+{% block title %}SheMoves{% endblock%}
+
+{% block content %}
+<main>
+    <section id="posts">
+        {% for post in posts %}
+        <div class="post">
+            <p><strong>{{ post.user.name }}</strong></p>
+            <p>{{ post.content }}</p>
+            {% if post.image %}
+            <img src="{{ post.image }}" alt="Imagem do post" class="post-image">
+            {% endif %}
+    
+            <p id="likes-count-{{ post.id }}">Likes: {{ post.likes }}</p>
+    
+            <div class="interactions">
+                <button class="like-button" data-post-id="{{ post.id }}">
+                    <img src="https://cdn-icons-png.flaticon.com/128/233/233095.png" alt="Curtir" width="30" height="30">
+                </button>
+    
+                <button class="toggle-comment-form" data-post-id="{{ post.id }}">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2783/2783463.png" alt="Comentar" width="30" height="30">
+                </button>
+            </div>
+    
+            <section class="comments" id="comments-{{ post.id }}">
+                <h4>Comentários</h4>
+                {% for comment in post.comments %}
+                <div class="comment">
+                    <strong>{{ comment.user.name }}:</strong> {{ comment.content }}
+                </div>
+                {% endfor %}
+            </section>
+    
+            <form class="comment-form" id="comment-form-{{ post.id }}" data-post-id="{{ post.id }}" style="display: none;">
+                <input type="text" name="content" placeholder="Escreva um comentário..." required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        {% endfor %}
+    </section>
+</main>
+{% endblock%}
+
+<!-- esta com scripts3 -->

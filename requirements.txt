@@ -1,0 +1,5 @@
+flask
+flask-sqlalchemy
+flask-uploads
+mysql-connector-python
+pymysql
